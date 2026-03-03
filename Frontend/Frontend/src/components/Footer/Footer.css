@@ -1,0 +1,307 @@
+.footer {
+  background: #1c1c1c;
+  color: #ffffff;
+  padding: 60px 0 0;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Footer Sections */
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.footer-section h4::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #e23744;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: #e23744;
+}
+
+.footer-description {
+  color: #999;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 36px;
+  height: 36px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: #e23744;
+  transform: translateY(-3px);
+}
+
+.social-icon {
+  font-size: 1.2rem;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #e23744;
+  padding-left: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.contact-icon {
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+/* Download App Section */
+.footer-app {
+  border-top: 1px solid #333;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-app h4 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s;
+  min-width: 160px;
+}
+
+.app-button:hover {
+  background: #e23744;
+}
+
+.app-icon {
+  font-size: 2rem;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.app-text small {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.app-text strong {
+  font-size: 1rem;
+}
+
+/* Payment Methods */
+.footer-payment {
+  border-top: 1px solid #333;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-payment h4 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.payment-icon {
+  background: #333;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  cursor: help;
+}
+
+.payment-icon:hover {
+  background: #e23744;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-bottom-links a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom-links a:hover {
+  color: #e23744;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+
+  .footer-section:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .app-button {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .payment-icons {
+    gap: 10px;
+  }
+
+  .payment-icon {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

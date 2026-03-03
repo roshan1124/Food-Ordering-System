@@ -1,0 +1,286 @@
+/* Orders Container */
+.orders-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.orders-header {
+  margin-bottom: 30px;
+}
+
+.orders-header h1 {
+  font-size: 2.5rem;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+/* Order Filters */
+.order-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 25px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+  border-color: #e23744;
+  color: #e23744;
+}
+
+.filter-btn.active {
+  background: #e23744;
+  color: white;
+  border-color: #e23744;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Order Card */
+.order-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-card-header {
+  padding: 20px;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.order-restaurant {
+  font-size: 1.2rem;
+  color: #1c1c1c;
+  margin-bottom: 4px;
+}
+
+.order-id {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-text {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.order-card-body {
+  padding: 20px;
+}
+
+.order-items-preview {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.order-item-preview {
+  color: #1c1c1c;
+}
+
+.more-items {
+  color: #e23744;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.order-details {
+  display: flex;
+  gap: 30px;
+}
+
+.order-detail {
+  display: flex;
+  gap: 8px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #1c1c1c;
+}
+
+.order-amount {
+  font-weight: 600;
+  color: #e23744;
+}
+
+.order-card-footer {
+  padding: 15px 20px;
+  background: #f8f8f8;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  gap: 10px;
+}
+
+.order-action-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.order-action-btn.details {
+  background: #e23744;
+  color: white;
+}
+
+.order-action-btn.track {
+  background: #17a2b8;
+  color: white;
+}
+
+.order-action-btn.reorder {
+  background: #28a745;
+  color: white;
+}
+
+.order-action-btn:hover {
+  opacity: 0.8;
+}
+
+/* Loading State */
+.orders-loading {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.orders-loading .loader {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #e23744;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+/* Error State */
+.orders-error {
+  text-align: center;
+  padding: 60px 20px;
+  color: #e23744;
+}
+
+/* No Orders */
+.no-orders {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.no-orders-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-orders h3 {
+  font-size: 1.5rem;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.no-orders p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.browse-btn {
+  padding: 12px 30px;
+  background: #e23744;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.browse-btn:hover {
+  background: #c41e2c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .orders-header h1 {
+    font-size: 2rem;
+  }
+
+  .order-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .order-card-footer {
+    flex-wrap: wrap;
+  }
+
+  .order-action-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-filters {
+    justify-content: center;
+  }
+
+  .order-card-footer {
+    flex-direction: column;
+  }
+}

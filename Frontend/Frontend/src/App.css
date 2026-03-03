@@ -1,0 +1,22 @@
+.App {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Zomato-like colors */
+:root {
+  --primary: #e23744;
+  --primary-dark: #c41e2c;
+  --secondary: #ff7e8b;
+  --text-dark: #1c1c1c;
+  --text-light: #696969;
+  --white: #ffffff;
+  --bg-light: #f8f8f8;
+  --border: #e8e8e8;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
